@@ -13,4 +13,5 @@ run:
 	docker run --rm $(prefix)/alpine-$(name):latest
 
 push:
-	git push -u github master
+	git push github master
+	git push gitlab master
