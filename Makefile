@@ -1,7 +1,7 @@
 name ?= canel
 prefix ?= canelrom1
 
-tag = $(shell date +%y.%m.%d)
+tag = $(shell date +%Y%m%d.%H%M%S)
 
 all: build
 
