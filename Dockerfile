@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 LABEL maintainer="Rom1 <rom1@canel.ch> - CANEL https://www.canel.ch"
-LABEL date="24/03/2019"
+LABEL date="24/03/2020"
 LABEL version=""
 LABEL description="Alpine avec une configuration personnalisée"
 
