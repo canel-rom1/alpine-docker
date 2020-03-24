@@ -10,7 +10,7 @@ build: Dockerfile
 	docker tag $(prefix)/alpine-$(name):$(tag) $(prefix)/alpine-$(name):latest
 
 run:
-	docker run --rm $(prefix)/alpine-$(name):latest
+	docker run -it --rm $(prefix)/alpine-$(name):latest sh
 
 push:
 	git push github master
