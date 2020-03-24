@@ -1,12 +1,13 @@
 FROM alpine:latest
 
 LABEL maintainer="Rom1 <rom1@canel.ch> - CANEL https://www.canel.ch"
-LABEL date=""
+LABEL date="24/03/2019"
 LABEL version=""
-LABEL description=""
+LABEL description="Alpine avec une configuration personnalisée"
 
 RUN apk update \
- && apk add tzdata
+ && apk add tzdata \
+ && rm -rf /var/cache/apk/*
 
 ENV TIMEZONE="Europe/Zurich"
 
