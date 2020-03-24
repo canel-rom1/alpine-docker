@@ -6,7 +6,7 @@ tag = $(shell date +%y.%m.%d)
 all: build
 
 build: Dockerfile
-	docker build -t $(prefix)/alpine-$(name):$(tag) .
+	docker build --pull -t $(prefix)/alpine-$(name):$(tag) .
 	docker tag $(prefix)/alpine-$(name):$(tag) $(prefix)/alpine-$(name):latest
 
 run:
