@@ -15,3 +15,4 @@ run:
 push:
 	git push github master
 	git push gitlab master
+	docker push canelrom1/alpine-canel:latest
