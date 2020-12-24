@@ -5,7 +5,7 @@ LABEL date="24/12/2020"
 LABEL version=""
 LABEL description="Alpine avec une configuration personnalisée"
 
-RUN apk --no-cache --update add tzdata=2020d-r1 
+RUN apk --no-cache --update add tzdata=2020c-r1 
 
 ENV TIMEZONE="Europe/Zurich"
 
