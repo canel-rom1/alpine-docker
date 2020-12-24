@@ -13,6 +13,5 @@ run:
 	docker run -it --rm $(prefix)/alpine-$(name):latest sh
 
 push:
-	git push github master
-	git push gitlab master
-	docker push canelrom1/alpine-canel:latest
+	git push
+	git push github master --tags
