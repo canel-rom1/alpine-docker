@@ -13,5 +13,5 @@ run:
 	docker run -it --rm $(REPO)/alpine-$(NAME):latest sh
 
 push:
-	git push
+	git push --tags
 	git push github master --tags
